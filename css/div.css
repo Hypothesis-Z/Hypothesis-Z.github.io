@@ -1,26 +1,93 @@
 #header {
-    background-color: black;
+    background-image: linear-gradient(160deg, #b100ff 20%,#00b3ff 80%);
     color: white;
     text-align: center;
     padding: 5px;
+    user-select: none;
 }
+
+#content{
+    height: 1000px;
+    margin:0 auto;
+    width: 1100px;
+}
+
 #navigation {
     line-height: 30px;
     background-color: white;
-    height: 1000px;
-    width: 150px;
-    float: left;
+    width: 200px;
     padding: 10px;
+    float: left;
 }
-#section {
-    width:1000px;
-    float:left;
+
+#sections {
+    width:800px;
     padding:10px; 
+    float: left;
 }
+
 #foot {
-    background-color: black;
+    background-color:grey;
     color:white;
     clear: both;
     text-align: center;
     padding: 5px;
+}
+
+#nav ul li{
+    padding: 10px;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+
+#nav ul li:hover{
+    background-color: rgb(210,210,210);
+    color: white;
+}
+
+.nav_selected{
+    background-color: rgb(240,240,240);
+    color: royalblue;
+    border-left: 4px solid royalblue;
+}
+/*
+#sections div{
+    display: none;
+}*/
+
+.section_show{
+    display: block;
+}
+
+.section_hide{
+    display: none;
+}
+
+#bref{
+    margin: 0 auto;
+}
+
+#avatar{
+    float:left;
+    padding:10px;
+}
+
+#info{
+    float:left;
+    padding:10px;
+}
+
+#info > h1{
+    font-size: 26px;
+}
+
+
+#introduction{
+    clear: both;
+    padding: 10px;
+    font-family:"Times New Roman", "宋体";
+    background-color: aliceblue;
+    border-radius:10px;
 }
