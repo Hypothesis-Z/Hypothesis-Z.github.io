@@ -47,7 +47,7 @@
     color: white;
 }
 
-.nav_selected{
+.nav-selected{
     background-color: rgb(240,240,240);
     color: royalblue;
     border-left: 4px solid royalblue;
@@ -57,11 +57,11 @@
     display: none;
 }*/
 
-.section_show{
+.show{
     display: block;
 }
 
-.section_hide{
+.hide{
     display: none;
 }
 
@@ -90,4 +90,85 @@
     font-family:"Times New Roman", "宋体";
     background-color: aliceblue;
     border-radius:10px;
+}
+
+.repo{
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    border:2px solid royalblue;
+    border-radius: 9999px;
+    width: 300px;
+    height: auto;
+    transition:all 0.25s ease;
+}
+
+.repo:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    border:2px solid rgb(240,240,240);
+    background-color: rgb(240,240,240);
+}
+
+.icon{
+    margin: 4px;
+    vertical-align:middle;
+    display: inline-block;
+    
+}
+
+.icon img{
+    vertical-align:middle;
+    border-radius: 9999px;
+}
+
+.repo-info{
+    vertical-align:middle;
+    display: inline-block;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.language{
+    position: relative;
+    font-size: 12px;
+    color: #333333;
+}
+
+.language-color{
+    margin-left: 2px;
+    margin-right: 4px;
+    top:1px;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.create-date{
+    font-size: 12px;
+    color: #333333;
+}
+
+.create-date::before{
+    content:url("clock.svg");
+    position: relative;
+    margin-right: 2px;
+    top:2px;
+}
+
+.stars{
+    font-size: 12px;
+    color: #333333;
+}
+
+.stars::before{
+    content: url("star.svg");
+    position: relative;
+    margin-right: 2px;
+    top:2px;
 }
