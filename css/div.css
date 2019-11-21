@@ -40,6 +40,7 @@
     cursor: pointer;
     font-weight: bold;
     user-select: none;
+    transition:all 0.25s ease;
 }
 
 #nav ul li:hover{
@@ -96,8 +97,9 @@
     float: left;
     margin: 10px;
     padding: 10px;
-    border:2px solid royalblue;
     border-radius: 9999px;
+    border:2px solid rgb(240,240,240);
+    background-color: rgb(240,240,240);
     width: 300px;
     height: auto;
     transition:all 0.25s ease;
@@ -106,8 +108,8 @@
 .repo:hover{
     transform: scale(1.1);
     cursor: pointer;
-    border:2px solid rgb(240,240,240);
-    background-color: rgb(240,240,240);
+    border:2px solid royalblue;
+    background-color: white;
 }
 
 .icon{
